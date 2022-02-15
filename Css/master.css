@@ -1,42 +1,35 @@
-nav {
-  display: flex;
-  justify-content: flex-end;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: red;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-  z-index: 10;
-}
-nav li {
-  display: inline;
-  padding: 30px;
-}
-h1 {
-  font-size: 50px;
-}
-h2 {
-  font-size: 35px;
+body {
+  
+  letter-spacing: 2px;
+  margin: 0px; 
   
 }
 ul {
-  list-style: none;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px; 
 }
-a {
-  text-decoration: none;
-  color: white;
+nav li {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 15px ;
+  float:left;
+  width: 30.67% ;
+  margin-left: 2%;
+  list-style: none;
+  text-align: center;
+  font-weight:bold ;
+  font-size: 1.3em;
+  color: black;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  background-color: rgb(180, 154, 105);
+  padding-top: 150px;
+  padding-bottom: 10px;
   width: 100%;
   height: 50vh;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 header p {
   font-size: 30px;
@@ -44,31 +37,44 @@ header p {
   font-style: italic;
   color: red;
 }
-section img {
-  height: 150%;
-  width: 40%;
-  object-fit: cover;
-  
-}
 section {
-  display: table;
+  overflow: hidden;
+  padding: 20px;
+  margin: auto;
+  background-color: bisque; 
+}
+section div {
+  border: 1px solid black;
+  border-radius: 25px ;
+  padding-top: 20px;
+  padding-bottom: 20px ;
+  float:left;
+  width: 30.67% ;
+  margin-left: 2%;
+  list-style: none;
+  background-color: #eee;
   text-align: center;
-  background: blue;
+  margin-bottom: 15px;
 }
-
-section h2 {
-  max-width: 640px;
-  margin: 0 auto 100px auto;
-  border-bottom: 2px solid white;
+section img, a {
+  display: block;
+  width: 85%;
+  padding: 10px;
+  margin: auto;
+  text-decoration: none;
+  border-radius: 25px;
 }
-
-footer {
-  font-weight: 300;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2px;
+footer  {
+  padding: 1px;
   background: gray;
   border-top: 4px solid red;
-  bottom: 0px;
+  text-align: center;
 
 }
+.projects {
+  margin-top: 0px;
+  background-color: aquamarine;
+  border: 1px solid black;
+  text-align: center;
+}
+
