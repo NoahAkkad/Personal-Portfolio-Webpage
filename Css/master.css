@@ -69,8 +69,9 @@ header p {
 section {
   display: flex;
   flex-flow: row wrap;
-  justify-content: left;
-  align-items: center;
+  justify-content:space-evenly;
+  
+  
   list-style: none;
   padding: 20px;
   margin: auto;
@@ -81,8 +82,7 @@ section {
 section div { 
   padding-top: 10px;
   padding-bottom: 0px ;
-  width: 30.67%;
-  margin-left: 2%;
+  width: calc(90% / 3);
   background-color:transparent;
   margin-bottom: 50px;
   box-shadow: 0 0 10px 0 var(--one);
