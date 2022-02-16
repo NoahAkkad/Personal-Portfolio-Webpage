@@ -1,43 +1,56 @@
 :root{
-  --portflioColor:black;
-  font-size: 16px;
+  --one:rgba(0, 0, 0, 0.411);
+  --tow:rgb(167, 60, 42);
+  --thre:rgb(85, 84, 84);
+  font-size: 16px;  
   
 }
 *{
   box-sizing: border-box;
-}
-body {
-  
+  color: white ;
+  text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(2, 2, 2);
+  text-decoration: none;
   letter-spacing: 2px;
   margin: 0px; 
-  
 }
-nav{
-  position: sticky;
-}
+
 ul {
-  
-  padding: 0px;
+  list-style: none;
+  padding: 12px;
   margin: 0px; 
   position: fixed;
   display: flex; 
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
   width: 100%;
-  background-color: rgb(167, 60, 42);
-  justify-content: right;
-  text-align: center;
+  background-color: var(--tow);
+  box-shadow: 0 0 10px 0 var(--one);
 }
 nav li {
+  
   padding-right: 20px;
   list-style: none;
   font-weight:bold ;
   font-size: 1.3em;
+  
+  
 }
 a:hover{
-  color: red;
+  color: var(--tow);
   transition: 1s;
 }
-a {
-  color: var(--portflioColor);
+section p {
+  text-align: center;
+  background-color: var(--thre);
+  padding: 20px;
+  bottom: 0;
+  margin-bottom: 0px;
+  border-radius: 20px ;
+  border-top-left-radius: 0px ;
+  border-top-right-radius: 0px;
+  
+  
 }
 header {
   text-align: center;
@@ -51,54 +64,64 @@ header p {
   font-size: 30px;
   font-weight: 200;
   font-style: italic;
-  color: red;
+  color:var(--tow);
 }
 section {
-  overflow: hidden;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  align-items: center;
+  list-style: none;
   padding: 20px;
   margin: auto;
   background-color: bisque; 
+  box-shadow: 0 0 10px 0 var(--one);
+  
 }
-section div {
-  border: 1px solid black;
-  border-radius: 25px ;
-  padding-top: 20px;
-  padding-bottom: 20px ;
-  float:left;
-  width: 30.67% ;
+section div { 
+  padding-top: 10px;
+  padding-bottom: 0px ;
+  width: 30.67%;
   margin-left: 2%;
-  list-style: none;
-  background-color: #eee;
-  text-align: center;
-  margin-bottom: 15px;
-  height: 350px;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.411);
+  background-color:transparent;
+  margin-bottom: 50px;
+  box-shadow: 0 0 10px 0 var(--one);
+  border-radius: 20px ;
+  -webkit-border-radius: 20px ;
+  -moz-border-radius: 20px ;
+  -ms-border-radius: 20px ;
+  -o-border-radius: 20px ;
 }
 section div:hover {
-  background-color: rgba(230, 57, 57, 0.459);
-  transition: 1.5s;
+  background-color: var(--tow);
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
 }
-section img, a {
-  display: block;
-  width: 90%;
-  padding: 5px;
-  margin: auto;
-  text-decoration: none;
-  border-radius: 25px;
-  
-  
+section img { 
+  width: 100%;
+  padding: 10px;
+  max-height: 250px;
+  border-radius: 20px ;
+  -webkit-border-radius: 20px ;
+  -moz-border-radius: 20px ;
+  -ms-border-radius: 20px ;
+  -o-border-radius: 20px ;
 }
 footer  {
-  padding: 1px;
-  background: gray;
-  border-top: 4px solid red;
+  padding: 10px;
+  background: var(--thre);
+  border-top: 4px solid var(--tow);
   text-align: center;
-
+  box-shadow: 0 0 10px 0 var(--one);
 }
 .projects {
-  margin-top: 0px;
-  background-color: aquamarine;
-  border: 1px solid var(--portflioColor);
+  width: 100%;
+  padding: 10px;
   text-align: center;
+  background-color: rgb(177, 142, 46);
+  box-shadow: 0 0 10px 0 var(--one); 
 }
 
