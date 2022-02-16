@@ -1,28 +1,44 @@
+:root{
+  --portflioColor:black;
+  font-size: 16px;
+  
+}
+*{
+  box-sizing: border-box;
+}
 body {
   
   letter-spacing: 2px;
   margin: 0px; 
   
 }
+nav{
+  position: sticky;
+}
 ul {
-  overflow: hidden;
+  
   padding: 0px;
   margin: 0px; 
+  position: fixed;
+  display: flex; 
+  width: 100%;
+  background-color: rgb(167, 60, 42);
+  justify-content: right;
+  text-align: center;
 }
 nav li {
-  display: block;
-  padding-top: 10px;
-  padding-bottom: 15px ;
-  float:left;
-  width: 30.67% ;
-  margin-left: 2%;
+  padding-right: 20px;
   list-style: none;
-  text-align: center;
   font-weight:bold ;
   font-size: 1.3em;
-  color: black;
 }
-
+a:hover{
+  color: red;
+  transition: 1s;
+}
+a {
+  color: var(--portflioColor);
+}
 header {
   text-align: center;
   background-color: rgb(180, 154, 105);
@@ -55,14 +71,20 @@ section div {
   background-color: #eee;
   text-align: center;
   margin-bottom: 15px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.411);
+}
+section div:hover {
+  background-color: rgba(230, 57, 57, 0.459);
+  transition: 1.5s;
 }
 section img, a {
   display: block;
-  width: 85%;
+  width: 90%;
   padding: 10px;
   margin: auto;
   text-decoration: none;
   border-radius: 25px;
+  
 }
 footer  {
   padding: 1px;
@@ -74,7 +96,7 @@ footer  {
 .projects {
   margin-top: 0px;
   background-color: aquamarine;
-  border: 1px solid black;
+  border: 1px solid var(--portflioColor);
   text-align: center;
 }
 
