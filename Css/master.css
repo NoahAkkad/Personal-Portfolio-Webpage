@@ -71,6 +71,7 @@ section div {
   background-color: #eee;
   text-align: center;
   margin-bottom: 15px;
+  height: 350px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.411);
 }
 section div:hover {
@@ -80,10 +81,11 @@ section div:hover {
 section img, a {
   display: block;
   width: 90%;
-  padding: 10px;
+  padding: 5px;
   margin: auto;
   text-decoration: none;
   border-radius: 25px;
+  
   
 }
 footer  {
